@@ -1,38 +1,90 @@
-.App {
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding:0px
+}
+
+.box-header{
+  box-shadow: 0 2px rgb(161, 159, 159);
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  margin-top:20px;
+  margin-bottom: 10px;
+  align-items: center;
+  color:#202020;
+}
+
+.Logo{
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.nav-items{
+  list-style: none;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.nav-items>li>a {
+  padding-left: 20px;
+  color:#202020;
+  text-decoration: none;
+}
+
+.btn-logout{
+  padding: 10px 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color:#202020;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 1s background;
+  margin-bottom: 10px;
+}
+
+.btn-logout:hover{
+  background-color: #3d3d3d;
+  transition: 1s background;
+}
+
+/*SELLER REGION*/
+
+.tableDiv{
+  padding:10px;
+}
+
+.nameSellers{
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sales{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
