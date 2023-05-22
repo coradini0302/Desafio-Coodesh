@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+.inputLabel{
+    font-weight: 800;
+    font-size: 25px;
+}
+.uploadInput{
+    height: 100px;
+    
+}
+#uploadbtn{
+    padding: 10px 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color:#202020;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 1s background;
+  margin-bottom: 10px;
+}
+
+

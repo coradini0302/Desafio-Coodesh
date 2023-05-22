@@ -25,6 +25,11 @@ nav{
   text-decoration: none;
 }
 
+.Logo a{
+  text-decoration: none;
+  color: #202020;
+}
+
 .nav-items{
   list-style: none;
   display: flex;
@@ -87,4 +92,19 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.import{
+  padding-left:20px;
+}
+.titleUpload{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.upload{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }

@@ -4,6 +4,7 @@ import './index.css';
 import Home from './views/Home';
 import Import from './views/Import';
 import Sales from './views/Sales';
+import Types from './views/Types';
 import Sellers from './views/Sellers';
 import LoginForm from './components/loginform';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -18,6 +19,7 @@ root.render(
     <Route path='/Import' exact={true} Component={Import}></Route>
     <Route path='/Sales' exact={true} Component={Sales}></Route>
     <Route path='/Sellers' exact={true} Component={Sellers}></Route>
+    <Route path='/Types' exact={true} Component={Types}></Route>
     <Route path='/Login' exact={true} Component={LoginForm}></Route>
   </Routes>
   </BrowserRouter>

@@ -28,20 +28,24 @@ class Sales extends Component {
         <div className='tableDiv'>
           <table>
             <thead className='table-title'>
-              <tr><th colSpan="4">Type </th>
-              <th colSpan="4">Date </th>
-              <th colSpan="4">Product </th>
-              <th colSpan="4">Value </th>
-              <th colSpan="4">Name </th></tr>
+              <tr>
+                <th >Type </th>
+                <th >Date </th>
+                <th >Product </th>
+                <th >Value </th>
+                <th >Name </th>
+              </tr>
             </thead>
             <tbody>
               {
-                this.state.sales.map(seller => {
-                  return <tr key={seller.id}>
-                    <td >{seller.name}</td>
-                    <td >{seller.name}</td>
-                    <td >{seller.name}</td>
-                    <td >{seller.name}</td>
+                this.state.sales.map(sales => {
+                  return <tr key={sales.id}>
+                    <td >{sales.variety.sort}</td>
+                    <td >{sales.date}</td>
+                    <td >{sales.product.name}</td>
+                    <td >{sales.value}</td>
+                    <td >{sales.seller.name}</td>
+                    
                   </tr>
                 })
               }
