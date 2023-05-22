@@ -13,7 +13,13 @@ class Sellers extends Component {
       const sellers = response.data;
       this.setState({sellers});
       console.log(response);
-    })
+    }).catch((err) =>{
+      if(err.response){
+          console.log(err.response);
+      }else{
+          console.log("Erro: Tente mais tarde")
+      }
+  })
   }
 
 
@@ -38,8 +44,6 @@ class Sellers extends Component {
                   </tr>
                 })
               }
-              
-              
             </tbody>
           </table>
         </div>

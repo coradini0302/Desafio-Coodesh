@@ -8,13 +8,20 @@ class Types extends Component {
   state = {
     varieties: []
   }
+  
 
   componentDidMount() {
     axios.get('https://localhost:7299/api/Variety').then((response) => {
       const varieties = response.data;
       this.setState({ varieties });
       console.log(response);
-    })
+    }).catch((err) =>{
+      if(err.response){
+          console.log(err.response);
+      }else{
+          console.log("Erro: Tente mais tarde");
+      }
+  })
   }
 
   render() {
