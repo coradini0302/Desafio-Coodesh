@@ -18,12 +18,10 @@ class Header extends Component {
               <li><NavLink className="nav-link"  exact="true" to="/Types">Types</NavLink></li>
               <li><NavLink className="nav-link"  exact="true" to="/Sellers">Sellers</NavLink></li>
               
-              <li><NavLink className="nav-link"  exact="true" to="/Login">Login</NavLink></li>
               
             </ul>
             
           </div>
-          <button className="btn-logout" href='#'>Logout</button>
 
         </nav>
 
