@@ -7,8 +7,15 @@ class Home extends Component {
     return (
       <div className="App">
         <Header></Header>
-       <h1>Home</h1>
+        <div className='home'>
 
+          <h1>Welcome !</h1>
+        </div>
+        <div className='textHome'>
+          <h3>To start go to import pages or click in link below</h3>
+          <a href='/Import'>Import</a>
+        </div>
+        
       </div>
     );
   }

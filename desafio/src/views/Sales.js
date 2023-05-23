@@ -8,12 +8,20 @@ class Sales extends Component {
     sales: []
   }
 
+  
+
   componentDidMount(){
     axios.get('https://localhost:7299/api/GeneralSales').then( (response) => {
       const sales = response.data;
       this.setState({sales});
       console.log(response);
-    })
+    }).catch((err) =>{
+      if(err.response){
+          console.log(err.response);
+      }else{
+          alert("Connection Error: Try Later!")
+      }
+  })
   }
 
 

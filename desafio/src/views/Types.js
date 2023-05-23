@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, useState } from 'react';
 import '../App.css';
 import Header from './shared/Header';
 import axios from 'axios';
@@ -8,6 +8,7 @@ class Types extends Component {
   state = {
     varieties: []
   }
+  
   
 
   componentDidMount() {
@@ -19,7 +20,7 @@ class Types extends Component {
       if(err.response){
           console.log(err.response);
       }else{
-          console.log("Erro: Tente mais tarde");
+          alert("Connection Error: Try Later!")
       }
   })
   }
