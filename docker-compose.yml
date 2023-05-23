@@ -7,7 +7,7 @@ services:
         SA_PASSWORD: "#sa123456"
         ACCEPT_EULA: "Y"
     volumes:
-      - C:\Users\Gabriel\Documents\TechChallenge.bak:var/opt/mssql/data
+      - .api/db/data:var/opt/mssql/data
     restart: always
     api:
       build: TechChallenge
