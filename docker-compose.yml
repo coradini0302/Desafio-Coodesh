@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  db:
+    image: 6db3c5ebc3316eee88bf9bdcd0305da702da6da67fda5cf1b8a9da3cd480d98c
+    container_name: infallible_villani
+    environment:
+        SA_PASSWORD: "#sa123456"
+        ACCEPT_EULA: "Y"
+    volumes:
+      - C:\Users\Gabriel\Documents\TechChallenge.bak:var/opt/mssql/data
+    restart: always
+    api:
+      build: TechChallenge
+      container_name: techchallengeapi
+      restart: always
+      volumes:
+        - ./api:home/node/app
+      ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    web:
+      image: "c1b8ea5701a9e583b53564bbe8814be250d79d5283d5f076f5e7ab7cce6db1d6"
+      container_name: front-container
+      restart: always
+      volumes:
+      - ./website:var/www/html
+      ports:
+        - "7299:80"
+      depends_on:
+        -api
