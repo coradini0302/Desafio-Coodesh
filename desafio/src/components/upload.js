@@ -49,7 +49,7 @@ const Upload = () => {
                 <form onSubmit={saveFile}>
                     <label className="inputLabel"> Upload file .txt</label>
 
-                    <input className="uploadInput" type='file' name='txt' onChange={e => setFile(e.target.files[0])} /> <br /><br />
+                    <input className="uploadInput" type='file' accept=".txt" name='txt' onChange={e => setFile(e.target.files[0])} /> <br /><br />
                     {uploadError ? <p className="Error">Error 400, file not uploaded</p>:null}
                     {serverError ? <p className="Error">Error 500, conection lost with API. Try Later</p>:null}
                     <button type="submit" id="uploadbtn"> Upload</button>
