@@ -97,7 +97,7 @@ The entire backend part of the project was based on the .NET platform and its te
 ## 📄 API Documentation
 <br/>
 
-To go for API Documentation click [Here!](href='link') 👈
+To go for API Documentation click [Here!](https://github.com/coradini0302/Desafio-Coodesh/tree/main/api)') 👈
 
 <br/>
 <br/>
