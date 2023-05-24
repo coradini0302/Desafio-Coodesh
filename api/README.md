@@ -14,13 +14,13 @@ This is a Coodesh challenge of a multi-language project developed with the objec
 >
 > [2 - GeneralSales](#GeneralSales) 
 >
-> [3 - Sellers ](#Backend) 
+> [3 - Sellers](#Sellers) 
 >
->[4 - Products](#chainOfThought)
+>[4 - Products](#Products)
 >
->[4 - Varieties](#chainOfThought)
+>[4 - Varietiy](#Variety)
 >
->[5 - FileUpload](#chainOfThought)
+>[5 - FileUpload](#FileUpload)
 >
 
 <br/>
@@ -48,7 +48,7 @@ In the GeneralSales section it is possible to perform some actions through the u
 
 <br/>
 
-![Gif1](./Screenshot_3.png "Gif-1")
+![Gif1](./filesImage/Screenshot_3.png "Gif-1")
 <br/>
 <br/>
 
@@ -62,9 +62,10 @@ Below the call values ​​schema
 
 <br/>
 
-![Gif1](./Screenshot_3-1.png "Gif-1")
+![Gif1](./filesImage/Screenshot_3-1.png "Gif-1")
 
 # 💻 Seller
+<div id="Seller"></div>
 
 <br/>
 
@@ -72,7 +73,7 @@ In the image below are all the methods and actions allowed in this API function.
 
 <br/>
 
-![Gif1](./Screenshot_4.png "Gif-1")
+![Gif1](./filesImage/Screenshot_4.png "Gif-1")
 
 <br/>
 <br/>
@@ -81,11 +82,11 @@ Below the call values ​​schema
 
 <br/>
 
-![Gif1](./Screenshot_5-1.png "Gif-1")
+![Gif1](./filesImage/Screenshot_5-1.png "Gif-1")
 
 
 # 💻 Products
-<div id="Database"></div>
+<div id="Products"></div>
 In the image below are all the methods and actions allowed in this API function.
 
 <br/>
@@ -100,18 +101,19 @@ Below the call values ​​schema
 ![Gif1](./Screenshot_6-1.png "Gif-1")
 
 # 💻 Variety
+<div id="Variety"></div>
 In the image below are all the methods and actions allowed in this API function.
 
 <br/>
 
-![Gif1](./Screenshot_6.png "Gif-1")
+![Gif1](./filesImage/Screenshot_6.png "Gif-1")
 
 <br/>
 Below the call values ​​schema
 
 <br/>
 
-![Gif1](./Screenshot_4-1.png "Gif-1")
+![Gif1](./filesImage/Screenshot_4-1.png "Gif-1")
 
 
 # 💻 FileUpload
@@ -123,7 +125,7 @@ Only .txt files are allowed and must be uploaded as formdata in case of implemen
 
 <br/>
 
-![Gif1](./Screenshot_7.png "Gif-1")
+![Gif1](./filesImage/Screenshot_7.png "Gif-1")
 
 
 
