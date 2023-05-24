@@ -246,7 +246,12 @@ To run just type the command below
 <br/>
 
 > docker-compose up
->
+
+
+
+
+> Video presentation coodesh
+> https://www.loom.com/embed/4808ffa0cd404ff2bc9b43bcaa81f7e7
 
 
 
