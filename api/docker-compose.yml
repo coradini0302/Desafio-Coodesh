@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  db:
+    image: sqlserver
+    container-image: mysql-container
+    environment:
+      SQL_ROOT_PASSWORD: desafiotech
+    volumes:
+      -./api/techChallengeApi/techChallengeApi/data:/var/lib/sqlserver
+    restart: always
+  api:
+    build: "./api"
+
